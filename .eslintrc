@@ -1,0 +1,15 @@
+{
+  "extends": ["eslint:recommended", "prettier"],
+  "env": {
+    "browser": false,
+    "node": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "prefer-reflect": 0
+  }
+}
