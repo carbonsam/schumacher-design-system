@@ -8,13 +8,16 @@
   },
   "plugins": ["react"],
   "parserOptions": {
-    "ecmaVersion": 8,
+    "ecmaVersion": 2018,
     "ecmaFeatures": {
       "jsx": true
     },
     "sourceType": "module"
   },
-  "rules": {},
+  "rules": {
+    "rest-spread-spacing": ["error", "never"],
+    "react/prop-types": ["off"]
+  },
   "settings": {
     "react": {
       "version": "detect"
