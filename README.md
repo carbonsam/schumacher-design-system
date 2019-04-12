@@ -1,2 +1,3 @@
-# schumacher-design-system
-My personal design system
+# Schumacher Design System :zap:
+
+My personal design system.
