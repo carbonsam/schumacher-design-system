@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "start-storybook",
-    "build": "build-storybook -c .storybook -o .out"
+    "build": "build-storybook -c .storybook -o .out",
+    "lint": "eslint '**/*.js'"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -16,6 +17,7 @@
     "babel-loader": "^8.0.5",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-react": "^7.12.4",
     "husky": "^1.3.1",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0"
@@ -26,7 +28,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && eslint"
+      "pre-commit": "pretty-quick --staged && eslint '**/*.js'"
     }
   }
 }

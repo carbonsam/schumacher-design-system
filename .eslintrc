@@ -1,15 +1,23 @@
 {
-  "extends": ["eslint:recommended", "prettier"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
   "env": {
-    "browser": false,
+    "browser": true,
     "node": true,
     "es6": true,
     "commonjs": true
   },
+  "plugins": ["react"],
   "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "sourceType": "module"
   },
-  "rules": {
-    "prefer-reflect": 0
+  "rules": {},
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
