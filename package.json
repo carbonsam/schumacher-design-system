@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "start-storybook",
-    "build": "build-storybook -c .storybook -o .out",
+    "build": "build-storybook -c .storybook -o dist",
     "lint": "eslint '**/*.js'"
   },
   "devDependencies": {
