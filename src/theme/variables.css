@@ -1,0 +1,8 @@
+:root {
+  /*
+  ** Global Shoelace Overrides
+  */
+
+  /* States */
+  --state-primary: var(--color-olive);
+}

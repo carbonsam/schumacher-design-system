@@ -1,10 +1,8 @@
-import { configure, addParameters } from '@storybook/react';
+import { configure, addParameters } from '@storybook/html';
 import theme from './theme';
 
-const stories = require.context('../src/components', true, /\.stories\.js$/);
-
 const loadStories = () => {
-  stories.keys().forEach(filename => stories(filename));
+  require('../src/components');
 };
 
 addParameters({
