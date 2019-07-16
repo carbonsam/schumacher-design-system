@@ -4,7 +4,7 @@ import feather from 'feather-icons';
 import 'shoelace-css/source/css/shoelace.css';
 import '../../../theme/variables.css';
 
-storiesOf('Button', module)
+storiesOf('Atoms|Button', module)
   .add('with text', () => {
     const button = document.createElement('button');
     button.type = 'button';
